@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Break</title>
+    <link rel="stylesheet" href="style.css">
+      <link rel="icon" href="logo1.png">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">
+            <img src="logo1.png" alt="">
+        </a>
+        <i class='bx bx-menu' id="menu-icon"></i>
+        <ul class="navbar">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#customers">Customers</a></li>
+        </ul>
+        <div class="header-icon">
+            <i class='bx bx-cart-alt' ></i>
+            <i class='bx bx-search-alt' id="search-icon"></i>
+        </div>
+        <div class="search-box">
+            <input type="search" name="" id="" placeholder="Search Here. . .">
+        </div>
+    </header>
+    <section class="home" id="home">
+        <div class="home-text">
+            <h1>Start your day <br> with Coffee</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Explicabo, molestiae quisquam! Incidunt odio doloremque facilis.</p>
+            <a href="#products" class="btn">Shop Now</a>
+        </div>
+        <div class="home-img">
+            <img src="head.png" alt="">
+        </div>
+    </section>
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="logo.png" alt="">
+        </div>
+        <div class="about-text">
+            <h2>Our History</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum, recusandae? Quasi perferendis id quas recusandae odio commodi a vel natus.</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum, recusandae? Quasi perferendis id quas recusandae odio commodi a vel natus.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis doloremque impedit delectus maiores quam.</p>
+            <a href="#" class="btn">Learn More</a>
+        </div>
+    </section>
+    <section class="products" id="products">
+        <div class="heading">
+            <h2> Our Popular Products</h2>
+        </div>
+        <div class="products-container">
+            <div class="box">
+                <img src="logo.png" alt="">
+                <h3>Americano Pure</h3>
+                <div class="content">
+                    <span>$25</span>
+                    <button onclick="addToCart('Americano Pure', 25)">Add to cart</button>
+                </div>
+            </div>
+            <div class="box">
+                <img src="logo.png" alt="">
+                <h3>Americano Pure</h3>
+                <div class="content">
+                    <span>$25</span>
+                    <button onclick="addToCart('Americano Pure', 25)">Add to cart</button>
+                </div>
+            </div>
+            <div class="box">
+                <img src="logo.png" alt="">
+                <h3>Americano Pure</h3>
+                <div class="content">
+                    <span>$25</span>
+                    <button onclick="addToCart('Americano Pure', 25)">Add to cart</button>
+                </div>
+            </div>
+            <div class="box">
+                <img src="logo.png" alt="">
+                <h3>Americano Pure</h3>
+                <div class="content">
+                    <span>$25</span>
+                    <button onclick="addToCart('Americano Pure', 25)">Add to cart</button>
+                </div>
+            </div>
+            <div class="box">
+                <img src="logo.png" alt="">
+                <h3>Americano Pure</h3>
+                <div class="content">
+                    <span>$25</span>
+                    <button onclick="addToCart('Americano Pure', 25)">Add to cart</button>
+                </div>
+            </div>
+            <div class="box">
+                <img src="logo.png" alt="">
+                <h3>Americano Pure</h3>
+                <div class="content">
+                    <span>$25</span>
+                   <button onclick="addToCart('Americano Pure', 25)">Add to cart</button>
+                </div>
+            </div>
+            <div class="box">
+                <img src="logo.png" alt="">
+                <h3>Americano Pure</h3>
+                <div class="content">
+                    <span>$25</span>
+                    <button onclick="addToCart('Americano Pure', 25)">Add to cart</button>
+                </div>
+            </div>
+            <div class="box">
+                <img src="logo.png" alt="">
+                <h3>Americano Pure</h3>
+                <div class="content">
+                    <span>$25</span>
+                    <button onclick="addToCart('Americano Pure', 25)">Add to cart</button>
+                </div>
+            </div>
+            <div class="box">
+                <img src="logo.png" alt="">
+                <h3>Americano Pure</h3>
+                <div class="content">
+                    <span>$25</span>
+                    <button onclick="addToCart('Americano Pure', 25)">Add to cart</button>
+                </div>
+            </div>
+            <div class="box">
+                <img src="logo.png" alt="">
+                <h3>Americano Pure</h3>
+                <div class="content">
+                    <span>$25</span><button onclick="addToCart('Americano Pure', 25)">Add to cart</button>
+                </div>
+            </div>
+            <div class="box">
+                <img src="logo.png" alt="">
+                <h3>Americano Pure</h3>
+                <div class="content">
+                    <span>$25</span>
+                    <button onclick="addToCart('Americano Pure', 25)">Add to cart</button>
+                </div>
+            </div>
+            <div class="box">
+                <img src="logo.png" alt="">
+                <h3>Americano Pure</h3>
+                <div class="content">
+                    <span>$25</span>
+                    <button onclick="addToCart('Americano Pure', 25)">Add to cart</button>
+                </div>
+            </div>
+            <div class="cart">
+                <h3>Shopping Cart</h3>
+                <ul id="cart-items"></ul>
+                <p><strong>Total:</strong> $<span id="total-price">0</span></p>
+            </div>
+        </div>
+    </section>
+    <section class="customers" id="customers">
+        <div class="heading">
+            <h2>Our customer's</h2>
+        </div>
+        <div class="customers-container">
+            <div class="box">
+                <div class="stars">
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star-half' ></i>
+                </div>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate repellendus voluptas ducimus vel odit, voluptates illum?</p>
+                <h2>Yasin Arafat</h2>
+                <img src="people.png" alt="">
+            </div>
+            <div class="box">
+                <div class="stars">
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star-half' ></i>
+                </div>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate repellendus voluptas ducimus vel odit, voluptates illum?</p>
+                <h2>Leo Dabid</h2>
+                <img src="swordman.webp" alt="">
+            </div>
+            <div class="box">
+                <div class="stars">
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star' ></i>
+                    <i class='bx bxs-star-half' ></i>
+                </div>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate repellendus voluptas ducimus vel odit, voluptates illum?</p>
+                <h2>Eshli Kuled</h2>
+                <img src="people1.png" alt="">
+            </div>
+        </div>
+    </section>
+    <section class="footer">
+        <div class="footer-box">
+            <h3>Coffee Shop</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga ipsum aperiam iure explicabo id modi!</p>
+            <div class="social">
+                <a href="#"><i class='bx bxl-facebook-circle' ></i></a>
+                <a href="#"><i class='bx bxl-instagram' ></i></a>
+                <a href="#"><i class='bx bxl-telegram' ></i></a>
+                <a href="#"><i class='bx bxl-twitter' ></i></a>
+            </div>
+        </div>
+        <div class="footer-box">
+            <h3>Support</h3>
+            <li><a href="#">Product</a></li>
+            <li><a href="#">Help & Support</a></li>
+            <li><a href="#">Return Policy</a></li>
+            <li><a href="#">Terms Of Use</a></li>
+            <li><a href="#">Product</a></li>
+        </div>
+        <div class="footer-box">
+            <h3>View Guides</h3>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Blog Posts</a></li>
+            <li><a href="#">Our Branches</a></li>
+        </div>
+        <div class="footer-box">
+            <h3>Contact</h3>
+            <div class="contact">
+                <span><i class='bx bx-map' ></i>Prey Veng</span>
+                <span> <i class='bx bx-phone' ></i> +855 977 625 939 </span>
+                <span><i class='bx bx-envelope' ></i>Coffee@shop.com</span>
+            </div>
+        </div>
+    </section>
+    <div class="copyright">
+        <p>&#169; Coffee All Right Reserved</p>
+    </div>
+    <script src="main.js"></script>
+
+    <script>
+        let cart = [];
+        let totalPrice = 0;
+
+        function addToCart(productName, productPrice) {
+            cart.push({ name: productName, price: productPrice });
+            totalPrice += productPrice;
+            updateCartDisplay();
+        }
+
+        function updateCartDisplay() {
+            const cartItems = document.getElementById('cart-items');
+            const totalPriceElement = document.getElementById('total-price');
+
+            cartItems.innerHTML = '';
+
+            cart.forEach(item => {
+            const li = document.createElement('li');
+            li.textContent = `${item.name} is  $${item.price}`;
+            cartItems.appendChild(li);
+            });
+
+            totalPriceElement.textContent = totalPrice;
+        }
+
+        let menu = document.querySelector('#menu-icon');
+        let navbar = document.querySelector('.navbar');
+
+        menu.onclick = () => {
+            navbar.classList.toggle('active');
+            menu.classList.toggle('bx-x'); // change icon when active
+        };
+
+        // Remove navbar on scroll
+        window.onscroll = () => {
+            navbar.classList.remove('active');
+            menu.classList.remove('bx-x');
+        }
+    </script>
+</body>
+</html>
