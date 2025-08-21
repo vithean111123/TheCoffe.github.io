@@ -115,7 +115,7 @@ header.shadow {
 .home { 
     width: 100%;
     min-height: 100vh;
-    background: url(/background3.png);
+    background: url('background3.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -468,3 +468,4 @@ header.shadow {
         height: 60px;
     }
 }
+
