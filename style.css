@@ -168,13 +168,6 @@ header.shadow {
     /* border-radius: 40%; */
     transition: 1s;
 }
-.home-img{
-    backdrop-filter: blur(5px) brightness(0.8);
-    background-color: rgba(255, 255, 255, 0.3);
-    /* border-radius: 40%; */
-    transition: 1s;
-}
-
 @keyframes borderMove {
     
     0% { background-position: 0% 50%; }
@@ -475,5 +468,6 @@ header.shadow {
         height: 60px;
     }
 }
+
 
 
