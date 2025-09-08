@@ -20,26 +20,27 @@ window.addEventListener('scroll', () => {
 });
 
 
-// let cart=[];
-// let totalPrice=0;
-// function addToCart(){
-//   cart.push({name: productName, price: productPrice});
-//   totalPrice+=ProductPrice;
-//   updateCardDisplay();
-// }
+let cart=[];
+let totalPrice=0;
+function addToCart(){
+  cart.push({name: productName, price: productPrice});
+  totalPrice+=ProductPrice;
+  updateCardDisplay();
+}
 
-// function updateCardDisplay() {
-//   const cartItems = document.getElementById('cart-items');
-//   const totalPriceElement = document.getElementById('total-price');
-
-  
-//   cartItems.innerHTML = '';
-//   cart.forEach(item => {
-//     const li = document.createElement('li');
-//     li.textContent = `${item.name} - $${item.price}`;
-//     cartItems.appendChild(li);
-//   });
+function updateCardDisplay() {
+  const cartItems = document.getElementById('cart-items');
+  const totalPriceElement = document.getElementById('total-price');
 
   
-//   totalPriceElement.textContent = totalPrice;
-// }
+  cartItems.innerHTML = '';
+  cart.forEach(item => {
+    const li = document.createElement('li');
+    li.textContent = `${item.name} - $${item.price}`;
+    cartItems.appendChild(li);
+  });
+
+  
+  totalPriceElement.textContent = totalPrice;
+
+}
